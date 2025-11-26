@@ -48,8 +48,8 @@ npm run preview
 
 - Email: ousamu72419dazai@gmail.com
 - GitHub: [@ahmedremi](https://github.com/ahmedremi)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourusername)
-- Instagram: [@yourusername](https://instagram.com/yourusername)
+- LinkedIn: [Ahmed Yacine Guerfi](https://www.linkedin.com/in/guerfi-ahmed-yacine-6831b32b8/)
+- Instagram: [@yacine_remi77](https://instagram.com/yacine_remi77)
 
 ## 📄 License
 
