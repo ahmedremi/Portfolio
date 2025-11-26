@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-[#0a0a0a] text-white font-sans antialiased;
+    }
+
+    html {
+        @apply scroll-smooth;
+    }
+}
+
+@layer components {
+
+    /* Glassmorphism effect */
+    .glass-card {
+        @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6;
+        @apply transition-all duration-300;
+    }
+
+    .glass-card:hover {
+        @apply -translate-y-2 border-red-600/50;
+        box-shadow: 0 0 40px rgba(220, 38, 38, 0.4);
+    }
+
+    /* Gradient text */
+    .gradient-text {
+        @apply bg-gradient-primary bg-clip-text text-transparent;
+    }
+
+    /* Button styles */
+    .btn-primary {
+        @apply px-8 py-4 rounded-xl font-semibold text-lg;
+        @apply bg-gradient-primary text-white;
+        @apply transition-all duration-300;
+        box-shadow: 0 4px 16px rgba(220, 38, 38, 0.4);
+    }
+
+    .btn-primary:hover {
+        @apply -translate-y-1;
+        box-shadow: 0 8px 24px rgba(220, 38, 38, 0.6);
+    }
+
+    .btn-secondary {
+        @apply px-8 py-4 rounded-xl font-semibold text-lg;
+        @apply bg-transparent text-white border-2 border-red-600;
+        @apply transition-all duration-300;
+        @apply hover:bg-red-600 hover:-translate-y-1;
+    }
+}
+
+@layer utilities {
+
+    /* Scroll progress bar */
+    .scroll-progress {
+        @apply fixed top-0 left-0 h-1 bg-gradient-primary z-[9999];
+        @apply origin-left;
+    }
+
+    /* Fade in animation */
+    .fade-in {
+        @apply opacity-0 translate-y-8;
+        @apply transition-all duration-700 ease-out;
+    }
+
+    .fade-in.visible {
+        @apply opacity-100 translate-y-0;
+    }
+
+    /* 3D Transform utilities */
+    .perspective-1000 {
+        perspective: 1000px;
+    }
+
+    .preserve-3d {
+        transform-style: preserve-3d;
+    }
+
+    .backface-hidden {
+        backface-visibility: hidden;
+    }
+
+    /* 3D Card tilt effect */
+    .card-3d {
+        transform-style: preserve-3d;
+        transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .card-3d:hover {
+        transform: rotateY(5deg) rotateX(5deg) translateZ(20px);
+    }
+
+    /* Floating animation */
+    @keyframes float {
+
+        0%,
+        100% {
+            transform: translateY(0px) translateZ(0px);
+        }
+
+        50% {
+            transform: translateY(-20px) translateZ(10px);
+        }
+    }
+
+    .float-animation {
+        animation: float 6s ease-in-out infinite;
+    }
+
+    /* 3D Depth layers */
+    .layer-1 {
+        transform: translateZ(10px);
+    }
+
+    .layer-2 {
+        transform: translateZ(20px);
+    }
+
+    .layer-3 {
+        transform: translateZ(30px);
+    }
+}
