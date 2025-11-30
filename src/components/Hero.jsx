@@ -36,12 +36,13 @@ const Hero = () => {
                     transform: `translateZ(-50px) translateX(${mousePosition.x}px) translateY(${mousePosition.y}px)`
                 }}
             >
-                <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(220,38,38,0.15)_0%,transparent_70%)]" />
+                <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(168,85,247,0.15)_0%,transparent_70%)]" />
             </div>
 
             {/* Content with 3D layers */}
             <div className="container mx-auto px-6 text-center relative z-10 preserve-3d">
                 <div className="space-y-6">
+
                     <p
                         className="text-xl text-gray-400 animate-fade-in-up layer-1"
                         style={{
@@ -70,7 +71,7 @@ const Hero = () => {
                         }}
                     >
                         I'm a{' '}
-                        <span className="inline-block border-r-[3px] border-red-600 animate-blink">
+                        <span className="inline-block border-r-[3px] border-purple-500 animate-blink">
                             {displayText}
                         </span>
                     </p>

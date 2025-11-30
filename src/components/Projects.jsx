@@ -7,24 +7,24 @@ const Projects = () => {
             title: 'Secure E-Commerce Platform',
             description: 'Full-stack e-commerce solution with JWT authentication, encrypted payments, and XSS/CSRF protection. Built with React, Node.js, and MongoDB.',
             tags: ['React', 'Node.js', 'MongoDB', 'Security', 'JWT'],
-            gradient: 'from-[#dc2626] to-[#7f1d1d]',
+            gradient: 'from-[#a855f7] to-[#7c3aed]',
         },
         {
             title: 'Security Audit Dashboard',
             description: 'Real-time security monitoring dashboard for web applications with vulnerability scanning, threat detection, and automated alerts.',
             tags: ['React', 'TypeScript', 'WebSockets', 'Security'],
-            gradient: 'from-[#ef4444] to-[#991b1b]',
+            gradient: 'from-[#3b82f6] to-[#2563eb]',
         },
         {
             title: 'Authentication System',
             description: 'Robust authentication and authorization system with 2FA, OAuth integration, session management, and role-based access control.',
             tags: ['React', 'OAuth', '2FA', 'Security', 'Express'],
-            gradient: 'from-[#f87171] to-[#dc2626]',
+            gradient: 'from-[#06b6d4] to-[#0891b2]',
         },
     ];
 
     return (
-        <section id="projects" className="py-24 bg-[#13131a] perspective-1000">
+        <section id="projects" className="py-24 perspective-1000">
             <div className="container mx-auto px-6">
                 <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-16 gradient-text">
                     Featured Projects
@@ -75,7 +75,7 @@ const ProjectCard = ({ title, description, tags, gradient, index }) => {
                 {tags.map((tag, i) => (
                     <span
                         key={i}
-                        className="px-3 py-1 text-sm font-medium rounded-full bg-red-600/20 text-red-500"
+                        className="px-3 py-1 text-sm font-medium rounded-full bg-purple-600/20 text-purple-400"
                         style={{ transform: `translateZ(${5 + i * 2}px)` }}
                     >
                         {tag}

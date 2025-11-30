@@ -8,16 +8,16 @@ export default {
         extend: {
             colors: {
                 primary: {
-                    red: '#dc2626',      // Bright red
-                    crimson: '#991b1b',  // Dark crimson
-                    scarlet: '#ef4444',  // Scarlet red
+                    purple: '#a855f7',    // Vibrant purple
+                    blue: '#3b82f6',      // Bright blue
+                    cyan: '#06b6d4',      // Cyan
                 },
             },
             backgroundImage: {
-                'gradient-primary': 'linear-gradient(135deg, #dc2626 0%, #991b1b 100%)',
-                'gradient-secondary': 'linear-gradient(135deg, #ef4444 0%, #7f1d1d 100%)',
-                'gradient-tertiary': 'linear-gradient(135deg, #f87171 0%, #dc2626 100%)',
-                'gradient-hero': 'linear-gradient(135deg, #dc2626 0%, #991b1b 50%, #7f1d1d 100%)',
+                'gradient-primary': 'linear-gradient(135deg, #a855f7 0%, #3b82f6 100%)',
+                'gradient-secondary': 'linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%)',
+                'gradient-tertiary': 'linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%)',
+                'gradient-hero': 'linear-gradient(135deg, #a855f7 0%, #3b82f6 50%, #06b6d4 100%)',
             },
             animation: {
                 'fade-in-up': 'fadeInUp 0.6s ease',

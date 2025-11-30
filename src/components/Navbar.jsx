@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -15,8 +16,7 @@ const Navbar = () => {
 
     const navLinks = [
         { href: '#home', label: 'Home' },
-        { href: '#about', label: 'About' },
-        { href: '#skills', label: 'Skills' },
+        { href: '#technologies', label: 'Technologies' },
         { href: '#projects', label: 'Projects' },
         { href: '#contact', label: 'Contact' },
     ];
@@ -66,17 +66,17 @@ const Navbar = () => {
 
                 {/* Mobile Menu Button */}
                 <button
-                    className="md:hidden text-3xl text-white focus:outline-none"
+                    className="md:hidden text-white focus:outline-none"
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                     aria-label="Toggle navigation"
                 >
-                    {isMobileMenuOpen ? '✕' : '☰'}
+                    {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
                 </button>
             </div>
 
             {/* Mobile Menu */}
             <div
-                className={`md:hidden fixed top-[70px] left-0 w-full h-[calc(100vh-70px)] bg-[#0a0a0f]/98 backdrop-blur-md transition-transform duration-300 ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
+                className={`md:hidden fixed top-[70px] left-0 w-full h-[calc(100vh-70px)] bg-[#0a0a0f]/95 backdrop-blur-xl shadow-2xl transition-transform duration-300 ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
                     }`}
             >
                 <ul className="flex flex-col items-center gap-8 p-12">
