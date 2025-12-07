@@ -1,0 +1,122 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#grad1)"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="100" cy="100" r="50" fill="rgba(255,255,255,0.06)"/>
+  <circle cx="720" cy="120" r="70" fill="rgba(255,255,255,0.06)"/>
+  <circle cx="650" cy="480" r="90" fill="rgba(255,255,255,0.06)"/>
+  
+  <!-- Main platform illustration -->
+  <g transform="translate(200, 150)">
+    <!-- Central device screen -->
+    <rect x="0" y="0" width="400" height="280" rx="20" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.4)" stroke-width="3"/>
+    <rect x="15" y="15" width="370" height="250" rx="10" fill="rgba(255,255,255,0.1)"/>
+    
+    <!-- Header navigation -->
+    <rect x="25" y="25" width="350" height="35" rx="8" fill="rgba(255,255,255,0.15)"/>
+    <rect x="35" y="35" width="60" height="15" rx="4" fill="rgba(168,85,247,0.6)"/>
+    <rect x="105" y="35" width="50" height="15" rx="4" fill="rgba(255,255,255,0.3)"/>
+    <rect x="165" y="35" width="50" height="15" rx="4" fill="rgba(255,255,255,0.3)"/>
+    
+    <!-- Search bar -->
+    <rect x="240" y="30" width="120" height="25" rx="12" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <circle cx="345" cy="42.5" r="8" fill="rgba(168,85,247,0.7)"/>
+    
+    <!-- Product display grid -->
+    <g transform="translate(35, 80)">
+      <!-- Product 1 -->
+      <rect x="0" y="0" width="100" height="80" rx="8" fill="rgba(255,255,255,0.2)"/>
+      <rect x="8" y="8" width="84" height="50" rx="4" fill="rgba(255,255,255,0.15)"/>
+      <rect x="8" y="63" width="50" height="6" rx="3" fill="rgba(255,255,255,0.4)"/>
+      <circle cx="85" cy="66" r="8" fill="rgba(34,197,94,0.8)">
+        <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      
+      <!-- Product 2 -->
+      <rect x="115" y="0" width="100" height="80" rx="8" fill="rgba(255,255,255,0.2)"/>
+      <rect x="123" y="8" width="84" height="50" rx="4" fill="rgba(255,255,255,0.15)"/>
+      <rect x="123" y="63" width="50" height="6" rx="3" fill="rgba(255,255,255,0.4)"/>
+      <circle cx="200" cy="66" r="8" fill="rgba(34,197,94,0.8)">
+        <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+      </circle>
+      
+      <!-- Product 3 -->
+      <rect x="230" y="0" width="100" height="80" rx="8" fill="rgba(255,255,255,0.2)"/>
+      <rect x="238" y="8" width="84" height="50" rx="4" fill="rgba(255,255,255,0.15)"/>
+      <rect x="238" y="63" width="50" height="6" rx="3" fill="rgba(255,255,255,0.4)"/>
+      <circle cx="315" cy="66" r="8" fill="rgba(34,197,94,0.8)">
+        <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+      </circle>
+      
+      <!-- Product 4 -->
+      <rect x="0" y="95" width="100" height="80" rx="8" fill="rgba(255,255,255,0.2)"/>
+      <rect x="8" y="103" width="84" height="50" rx="4" fill="rgba(255,255,255,0.15)"/>
+      <rect x="8" y="158" width="50" height="6" rx="3" fill="rgba(255,255,255,0.4)"/>
+      <circle cx="85" cy="161" r="8" fill="rgba(34,197,94,0.8)">
+        <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" begin="0.9s" repeatCount="indefinite"/>
+      </circle>
+      
+      <!-- Product 5 -->
+      <rect x="115" y="95" width="100" height="80" rx="8" fill="rgba(255,255,255,0.2)"/>
+      <rect x="123" y="103" width="84" height="50" rx="4" fill="rgba(255,255,255,0.15)"/>
+      <rect x="123" y="158" width="50" height="6" rx="3" fill="rgba(255,255,255,0.4)"/>
+      <circle cx="200" cy="161" r="8" fill="rgba(34,197,94,0.8)">
+        <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" begin="1.2s" repeatCount="indefinite"/>
+      </circle>
+      
+      <!-- Product 6 -->
+      <rect x="230" y="95" width="100" height="80" rx="8" fill="rgba(255,255,255,0.2)"/>
+      <rect x="238" y="103" width="84" height="50" rx="4" fill="rgba(255,255,255,0.15)"/>
+      <rect x="238" y="158" width="50" height="6" rx="3" fill="rgba(255,255,255,0.4)"/>
+      <circle cx="315" cy="161" r="8" fill="rgba(34,197,94,0.8)">
+        <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+  
+  <!-- Floating security elements -->
+  <g transform="translate(50, 200)">
+    <circle cx="60" cy="60" r="55" fill="rgba(168,85,247,0.15)" stroke="rgba(168,85,247,0.4)" stroke-width="2" filter="url(#glow)">
+      <animate attributeName="r" values="55;58;55" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Lock icon -->
+    <rect x="45" y="60" width="30" height="30" rx="4" fill="rgba(255,255,255,0.9)"/>
+    <path d="M 50 60 V 48 A 10 10 0 0 1 70 48 V 60" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="4"/>
+    <circle cx="60" cy="75" r="4" fill="rgba(168,85,247,1)"/>
+    <text x="60" y="115" text-anchor="middle" fill="white" font-size="12" font-weight="bold">JWT</text>
+  </g>
+  
+  <g transform="translate(650, 350)">
+    <circle cx="60" cy="60" r="55" fill="rgba(34,197,94,0.15)" stroke="rgba(34,197,94,0.4)" stroke-width="2" filter="url(#glow)">
+      <animate attributeName="r" values="55;58;55" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Shield checkmark -->
+    <path d="M 35 50 L 35 75 Q 35 82 45 85 L 60 50 L 75 85 Q 85 82 85 75 L 85 50 Q 60 38 35 50" 
+          fill="rgba(255,255,255,0.9)"/>
+    <path d="M 52 65 L 58 72 L 70 55" fill="none" stroke="rgba(34,197,94,1)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="60" y="115" text-anchor="middle" fill="white" font-size="11" font-weight="bold">ENCRYPTED</text>
+  </g>
+  
+  <!-- Payment icons -->
+  <g transform="translate(100, 450)">
+    <rect x="0" y="0" width="70" height="45" rx="8" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+    <rect x="8" y="8" width="54" height="29" rx="4" fill="rgba(255,215,0,0.3)"/>
+    <circle cx="20" cy="22.5" r="7" fill="rgba(255,255,255,0.6)"/>
+    <circle cx="30" cy="22.5" r="7" fill="rgba(255,255,255,0.4)"/>
+  </g>
+</svg>
